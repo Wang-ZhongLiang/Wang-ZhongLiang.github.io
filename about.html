@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>About</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<!-- end google fonts -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--nav-->
+<script src="js/jquery.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<div class="body">
+<div class="wrap">
+<div class="wrapper">
+	<!-- start header-->
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt=""></a>
+		</div>
+		<div class="cssmenu">
+			<ul>
+			  	<li><a href="index.html">Home</a></li>
+				<li><a href="portfolio.html">作品集</a></li>
+				<li class="active"><a href="about.html">关于我</a></li>
+				<li class="last"><a href="contact.html">联系我</a></li>
+				<div class="clear"></div>
+			 </ul>
+		</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portfolio.html">作品集</a></li>
+					<li ><a href="about.html">关于我</a></li>
+					<li ><a href="contact.html">联系我</a></li>
+				</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	</div>
+    <!-- start content -->
+	 <div class="main1">
+	 	 <div class="content">
+	 	 	<h2>About me </h2>
+	 	 </div>
+	 	 <div class="about">
+	 	 	<p class="para1">&nbsp;</p>
+	 	 	<div class="blog_para">
+	 	 		<div class="about_img">
+	 	 			<img src="images/pic10.jpg" alt=""/>
+	 	 		</div>
+					<p>     10年产品生产、设计及管理工作经验（其中六年生产工艺及管理工作经验，四年工程/结构设计经验）。</p>
+                    <p>经历过合资企业（宁波惠尔顿婴童安全科技股份有限公司）的生产工艺及管理工作。私营企业（杭州恩赐婴童用品有限公司/山西熙泰婴童用品有限公司-昆山分部）的中高层管理。</p>
+                    <p>      对产品的结构、法规、用户习惯、产品定位等有较深的心得和体会，同时，具有比较强的结构设计及创新能力和丰富的目标设定与达成的技巧。 </p>
+                    <p>      在产品研发、团队建设、工艺工程改善、等方面有自己深刻的体会和实操经验。</p>
+                    <p>      能熟练 应用  PRO/E   AUTOCAD KEYSHORT 等 设计软件，OFFICE 办公软件等； </p>
+                    <p>熟悉新产品开发的认证测试流程，及相关资料制作。 </p>
+                    <p>能承受较大的工作压力，喜欢挑战自我。</p>
+                    <p>知识面较广，沟通理解能力强。</p>
+                    <p>&nbsp;</p>
+<p class="para2 about_para">&nbsp;</p>
+					<div class="clear"></div>
+					<p class="para"></p>
+					<div class="read_more">
+						<a class="btn" href="index.html">Read More</a>
+					</div>
+					
+				</div>
+		</div>
+		</div>
+ 	 </div>
+</div>
+</div>
+  <!-- start foorter -->
+<div class="footer_bg">
+<div class="wrap">
+<div class="wrapper"></div>
+</div>
+</div>
+  <!-- start footer copy -->
+</body>
+</html>

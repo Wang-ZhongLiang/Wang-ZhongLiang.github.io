@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<!-- end google fonts -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--nav-->
+<script src="js/jquery.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+
+<body>
+<div class="body">
+<div class="wrap">
+<div class="wrapper">
+	<!-- start header-->
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt="" width="214" height="86"></a>
+		</div>
+		<div class="cssmenu">
+			<ul>
+			  	<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="portfolio.html">  作品集</a></li>
+				<li ><a href="about.html"> 关于我</a></li>
+				<li ><a href="contact.html">联系我</a></li>
+				<div class="clear"></div>
+		  </ul>
+		</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portfolio.html">作品集</a></li>
+					<li ><a href="about.html">关于我</a></li>
+					<li ><a href="contact.html">联系我</a></li>
+				</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	</div>
+	<!-- start banner -->
+    <div class="banner">
+    	 <img src="images/banner.png" alt="" />
+    	 <h2>Looking for rockstar product designer?</h2>
+    	 <h3>Look no further...I am here to help!</h3>
+    </div>
+    <div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+    <!-- start content -->
+	 <div class="main">
+	 	 <div class="content">
+	 	 	<h2>list of projects</h2>
+	 	 </div>
+	 	 <div class="grids_of_4">
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="#"><img src="images/pic1.jpg" title="Project1" alt=""/></a>
+				  <h3><a href="#">0+1+2安全座椅设计</a></h3>
+					 <h4><a href="#"><a href="#">结构设计</a></h4>
+					 </a> 
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					 <a href="#"><img src="images/pic2.jpg" title="Project2" alt=""/></a>
+					 <h3><a href="#">儿童马桶扶梯</a></h3>
+					 <h4><a href="#">造型+结构设计</a></h4>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					 <a href="#"><img src="images/pic3.jpg" title="Project3" alt=""/></a>
+					 <h3><a href="#">去湿机</a> </h3>
+					 <h4><a href="#">造型+结构设计</a></h4>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					 <a href="#"><img src="images/pic4.jpg" title="Project4" alt=""/></a>
+					 <h3><a href="#">刻章机</a></h3>
+					 <h4><a href="#">造型设计</a></h4>
+				</div>
+				<div class="clear"></div>
+			</div>
+	 	 	 <div class="content">
+	 	 		<h2>&nbsp;</h2>
+	 	 	</div>
+	 	 	<div class="grids_of_3">
+	 	 	  <div class="clear"></div>
+	 	 	</div>
+	 	 	<div class="grids_of_3">
+	 	 	  <div class="clear"></div>
+	 	 	</div>	 	
+ 	 </div>
+</div>
+</div>
+  <!-- start foorter -->
+<div class="footer_bg">
+<div class="wrap">
+<div class="wrapper"></div>
+</div>
+</div>
+  <!-- start footer copy -->
+<div class="wrap">
+<div class="wrapper">
+	<div class="copy">	
+		<p class="w3-link">&nbsp;</p>
+	</div>
+</div>
+</div>
+
+</body>
+</html>

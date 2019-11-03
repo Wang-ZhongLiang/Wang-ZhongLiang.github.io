@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Contact</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<!-- end google fonts -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--nav-->
+<script src="js/jquery.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<div class="body">
+<div class="wrap">
+<div class="wrapper">
+	<!-- start header-->
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt=""></a>
+		</div>
+		<div class="cssmenu">
+			<ul>
+			  	<li><a href="index.html">Home</a></li>
+				<li><a href="portfolio.html">作品集</a></li>
+				<li><a href="about.html">关于我</a></li>
+				<li class="active"><a href="contact.html">联系我</a></li>
+				<div class="clear"></div>
+			 </ul>
+		</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portfolio.html">作品集</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li ><a href="about.html">关于我</a></li>
+					<li ><a href="contact.html">联系我t</a></li>
+				</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	</div>
+    <!-- start content -->
+	 <div class="main1">
+	 	 <div class="content">
+	 	 	<h2>get in touch</h2>
+	 	 </div>
+	 	 <div class="contact">				
+					<div class="contact_info">
+			    	 		<div class="map">
+					   			<iframe width="100%" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#666;text-align:left;font-size:0.85em">View Larger Map</a></small>
+					   		</div>
+      				</div>
+				  <div class="contact-form">
+			 	 <div class="content">
+		 	 	<h2>Contact ME</h2>
+		 	 </div>
+					    <form method="post" action="contact-post.html">
+					    	<div>
+						    	<p><span>
+						    	  <label>NAME</label>
+						    	  </span></p>
+						    	<p>汪忠良</p>
+					    	</div>
+						    <div>
+						    	<span><label>E-MAIL</label>
+						    	</span>ronar_work@163.com</div>
+						    <div>
+						     	<span><label>MOBILE</label>
+						     	</span>
+						    	<span>13566026726</span>
+						    (微信）</div>
+						    <div>
+						    	<span><label>SUBJECT</label></span>
+						    	<span><textarea name="userMsg"> </textarea></span>
+						    </div>
+						   <div>
+						   		<span><input type="submit" class="" value="Submit me"></span>
+						  </div>
+					    </form>
+				    </div>
+  				<div class="clear"> </div>		
+			  </div>
+		</div>
+ 	 </div>
+</div>
+</div>
+  <!-- start foorter -->
+<div class="footer_bg">
+<div class="wrap">
+<div class="wrapper"></div>
+</div>
+</div>
+  <!-- start footer copy -->
+<div class="wrap">
+<div class="wrapper"></div>
+</div>
+
+</body>
+</html>
